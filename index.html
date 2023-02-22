@@ -1,0 +1,55 @@
+<html>
+
+    <head>
+        <title>
+            Reg. Form Using local storage js-part4
+        </title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet"
+            href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    </head>
+
+    <body>
+
+        <div class="container">
+            <div class="col-sm-6" style="border: 1px solid gray;">
+                <h2 style="text-align: center;">Local Storage Form</h2>
+                <form action="#">
+                    <div class="form-group">
+                        <label for="name">Name:</label>
+                        <input type="text" class="form-control" id="name"
+                            placeholder="Enter name"><br>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="number">Number:</label>
+                        <input type="text" class="form-control" id="number"
+                            placeholder="Enter Number"><br>
+                    </div>
+                    <div class="form-group">
+                        <label for="country">Country:</label>
+                        <input type="text" class="form-control" id="cnt"
+                            placeholder="Enter Country"><br>
+                    </div>
+
+                    <button type="button" onclick="saveData()" id="save_btn"
+                        class="btn btn-default">Submit</button>
+
+                </form>
+            </div>
+            <div class="col-sm-6" style="border: 1px solid gray;">
+                <h2 style="text-align: center;">Show Data</h2><br>
+                <div class="row">
+                    <div class="col-sm-4" style="font-weight: bold ; ">Name</div>
+                    <div class="col-sm-4" style="font-weight: bold;">Number</div>
+                    <div class="col-sm-4" style="font-weight: bold;">Country</div>
+                </div>
+                <div id="showUsers"></div>
+            </div>
+        </div>
+
+    </body>
+    <script src="./script.js"></script>
+
+</html>
